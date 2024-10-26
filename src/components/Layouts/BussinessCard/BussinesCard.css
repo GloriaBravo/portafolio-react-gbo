@@ -1,0 +1,40 @@
+.business-card {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el cursor */
+}
+
+.business-card-image {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
+    margin-bottom: 15px;
+}
+
+.business-card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.business-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.business-card-contact {
+    font-size: 0.9rem;
+    color: #777;
+}

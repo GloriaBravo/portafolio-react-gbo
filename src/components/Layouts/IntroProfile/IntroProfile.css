@@ -1,0 +1,23 @@
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.container-img img {
+    width: 100px; /* Ancho de cada imagen */
+    height: auto;
+    border-radius: 4px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.container-img img:hover {
+    transform: scale(1.1); /* Agrandar imagen al pasar el cursor */
+}

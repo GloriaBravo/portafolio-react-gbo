@@ -1,0 +1,88 @@
+/* Estilo general para Home */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #d7f3f3; /* Fondo claro */
+}
+
+/* Estilo para ContainerSections */
+.ContainerSections {
+    width: 90%;
+    max-width: 800px; /* Ancho máximo */
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: hsl(190, 59%, 56%); /* Fondo de cada sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #2964ac1a; /* Sombra ligera */
+}
+
+/* Encabezados */
+h2 {
+    font-size: 1.8rem;
+    color: #1f1d1d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #605c5c;
+    text-align: justify;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen de perfil en IntroProfile */
+.ContainerSections .container-img img {
+    width: 150px; /* Ancho de la imagen de perfil */
+    height: 150px; /* Alto de la imagen de perfil */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra */
+}
+
+/* Estilo para la tarjeta de presentación */
+.business-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    margin: 20px 0; /* Espacio entre tarjetas */
+}
+
+/* Estilo para el nombre en la tarjeta de presentación */
+.business-card h3 {
+    font-weight: bold; /* Nombre en negrita */
+    color: #1f1d1d; /* Color del nombre */
+    margin: 10px 0; /* Espacio alrededor del nombre */
+}
+
+/* Estilo para el título en la tarjeta de presentación */
+.business-card p.title {
+    font-weight: bold; /* Título en negrita */
+    color: #2964ac; /* Color del título */
+    margin: 5px 0; /* Espacio alrededor del título */
+}
+
+/* Estilo para los datos de contacto */
+.business-card p.contact {
+    font-weight: normal; /* Información de contacto en normal */
+    color: #605c5c; /* Color del texto */
+    margin: 5px 0; /* Espacio alrededor de los datos */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.business-card img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
