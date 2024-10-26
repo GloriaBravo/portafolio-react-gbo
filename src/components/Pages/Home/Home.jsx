@@ -3,7 +3,8 @@ import { ContainerSections } from '../../Layouts/ContainerSections/ContainerSect
 import { Header } from '../../Layouts/Header/Header';
 import { Projects } from '../../Layouts/Projects/Projects';
 import { IntroProfile } from '../../Layouts/IntroProfile/IntroProfile';
-import { BusinessCard } from '../../Layouts/BusinessCard/BusinessCard'; // Asegúrate de importar el componente
+import { BusinessCard } from '../../Layouts/BusinessCard/BusinessCard';
+import imageUrl from '../../../assets/images/Foto-Glory.jpeg'; // Asegúrate de que esta ruta sea correcta
 import "./Home.css";
 
 export const Home = () => {
@@ -29,9 +30,9 @@ export const Home = () => {
             <BusinessCard 
               name="Gloria Bravo Oviedo"
               title="Estudiante de Tecnología en Análisis y Desarrollo de Software"
-              email="gloria.oviedo@example.com" // Cambia esto por tu email real
-              phone="(123) 456-7890" // Cambia esto por tu número real
-              imageUrl="ruta-a-tu-imagen.jpg" // Cambia esto por la ruta de tu imagen
+              email="gloria72159@hotmail.com" 
+              phone="319 725 2865" 
+              imageUrl={imageUrl} // Usa la variable importada aquí
             />
           </section>
         </ContainerSections>
@@ -46,6 +47,7 @@ export const Home = () => {
     </>
   );
 };
+
 
 
 
