@@ -2,7 +2,7 @@
     width: 300px;
     background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px gray;
     padding: 20px;
     text-align: center;
     margin: 20px;
@@ -24,7 +24,7 @@
 .business-card-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #d81515;
     margin: 10px 0;
 }
 

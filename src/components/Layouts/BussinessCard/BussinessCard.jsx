@@ -1,7 +1,7 @@
-// src/components/Layouts/BusinessCard/BusinessCard.jsx
-import React from 'react';
 
-const BusinessCard = ({ name, title, email, phone, imageUrl }) => {
+import './BussinesCard.css'
+
+export const BusinessCard = ({ name, title, email, phone, imageUrl }) => {
   return (
     <div className="business-card">
       <img src={imageUrl} alt={name} />
@@ -13,4 +13,3 @@ const BusinessCard = ({ name, title, email, phone, imageUrl }) => {
   );
 };
 
-export default BusinessCard; // Asegúrate de exportarlo así si estás usando exportaciones por defecto

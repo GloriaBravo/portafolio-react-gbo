@@ -1,11 +1,14 @@
-import React from 'react';
+import { BusinessCard } from '../../Layouts/BussinessCard/BussinessCard';
 import { ContainerSections } from '../../Layouts/ContainerSections/ContainerSections';
 import { Header } from '../../Layouts/Header/Header';
-import { Projects } from '../../Layouts/Projects/Projects';
+
+
+Projects
 import { IntroProfile } from '../../Layouts/IntroProfile/IntroProfile';
-import { BusinessCard } from '../../Layouts/BusinessCard/BusinessCard';
-import imageUrl from '../../../assets/images/Foto-Glory.jpeg'; // Asegúrate de que esta ruta sea correcta
+import { Projects } from '../../Layouts/Projects/Projects';
+import { ContactMe } from '../ContactMe/ContactMe';
 import "./Home.css";
+
 
 export const Home = () => {
   return (
@@ -32,8 +35,15 @@ export const Home = () => {
               title="Estudiante de Tecnología en Análisis y Desarrollo de Software"
               email="gloria72159@hotmail.com" 
               phone="319 725 2865" 
-              imageUrl={imageUrl} // Usa la variable importada aquí
+              imageUrl="/src/assets/images/Foto-Glory.jpeg" 
             />
+          </section>
+        </ContainerSections>
+
+        <ContainerSections>
+          <section aria-labelledby="contact-me">
+            <h2 id="contact-me">Contáctame</h2>
+            <ContactMe /> {/* Agrega el nuevo componente aquí */}
           </section>
         </ContainerSections>
 
@@ -47,7 +57,3 @@ export const Home = () => {
     </>
   );
 };
-
-
-
-

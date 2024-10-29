@@ -1,10 +1,9 @@
-import React from "react"
-import "./ContainerSections.css";
 
-export const ContainerSections = ({children, style}) => {
+export const ContainerSections = ({children}) => {
     return (
-        <section className={style}>{children}</section>         
 
-        
+        <>
+        <section>{children}</section>        
+        </>
     )
 }

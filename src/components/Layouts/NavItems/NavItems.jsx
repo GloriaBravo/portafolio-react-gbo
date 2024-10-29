@@ -1,5 +1,6 @@
 import React from 'react'
 import { ItemNavbar } from "../../UI/ItemNavbar/ItemNavbar"
+import './NavItems.css';
 
 
 export const NavItems = () => {
