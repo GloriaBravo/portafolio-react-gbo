@@ -30,20 +30,13 @@ export const Home = () => {
         <ContainerSections>
           <section aria-labelledby="business-card">
             <h2 id="business-card">Tarjeta de Presentación</h2>
-            <BusinessCard 
+            <BusinessCard
               name="Gloria Bravo Oviedo"
               title="Estudiante de Tecnología en Análisis y Desarrollo de Software"
-              email="gloria72159@hotmail.com" 
-              phone="319 725 2865" 
-              imageUrl="/src/assets/images/Foto-Glory.jpeg" 
+              email="gloria72159@hotmail.com"
+              phone="319 725 2865"
+              imageUrl="/src/assets/images/Foto-Glory.jpeg"
             />
-          </section>
-        </ContainerSections>
-
-        <ContainerSections>
-          <section aria-labelledby="contact-me">
-            <h2 id="contact-me">Contáctame</h2>
-            <ContactMe /> {/* Agrega el nuevo componente aquí */}
           </section>
         </ContainerSections>
 
@@ -51,6 +44,12 @@ export const Home = () => {
           <section aria-labelledby="projects">
             <h2 id="projects">Proyectos</h2>
             <Projects />
+          </section>
+        </ContainerSections>
+
+        <ContainerSections>
+          <section aria-labelledby="contact-me">
+            <ContactMe /> {/* Agrega el nuevo componente aquí */}
           </section>
         </ContainerSections>
       </main>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css'; // Archivo CSS específico para el estilo de las cards
+import './Projects.css'; 
 
 const projectData = [
     {
@@ -7,26 +7,22 @@ const projectData = [
         title: 'Piedra, papel y tijera',
         description: 'Se realiza una aplicacion que se puede interactuar en la web y se puede jugar contra el computador',
         imageUrl: '/src/assets/images/Experiences/piedra.JPG',
+        link: 'https://trabajo-triqui.vercel.app', 
     },
     {
         id: 2,
-        title: 'Api Los Simpson',
-        description: 'Se consume una api, las cual funciona llamando diferentes personajes con su respectiva descripcion',
-        imageUrl: '/src/assets/images/Experiences/Simpson.JPG',
+        title: 'Gestor de Finanzas',
+        description: 'Se realiza una aplicacion la cual se puede llevar un control de los gastos, y los pagos recibidos',
+        imageUrl: '/src/assets/images/Experiences/gestor_finanzas.JPG',
+        link: 'https://complementaria.vercel.app',
     },
     {
-        id: 1,
-        title: 'Api Git',
-        description: 'En este caso se consume una api la cual trae diferentes git.',
-        imageUrl: '/src/assets/images/Experiences/git.JPG',
+        id: 3,
+        title: 'Mascotas',
+        description: 'Esta aplicacion se realizo para la muestra de diferentes mascotas para su adopcion.',
+        imageUrl: '/src/assets/images/Experiences/mascotas.JPG',
+        link: 'https://mascotas-html-ohf9.vercel.app',
     },
-    {
-        id: 1,
-        title: 'Eleccion',
-        description: 'En este proyecto se hizo una combinacion de eleccion y formulario, para poder paracticar varias cosas en la aplicacion.',
-        imageUrl: '/src/assets/images/Experiences/pagina-eleccion.JPG',
-    },
-
 ];
 
 export const Projects = () => {
@@ -37,6 +33,14 @@ export const Projects = () => {
                     <img src={project.imageUrl} alt={project.title} className="project-image" />
                     <h3 className="project-title">{project.title}</h3>
                     <p className="project-description">{project.description}</p>
+                    <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link"
+                    >
+                        Visitar
+                    </a>
                 </div>
             ))}
         </div>

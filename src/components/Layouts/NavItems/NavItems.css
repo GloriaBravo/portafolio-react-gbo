@@ -1,8 +1,8 @@
 .navbar {
-    background-color: #150766;
+    background-color: #4a48ef;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -23,4 +23,16 @@
 
 .navbar-list li:hover {
     color: #ff8c00;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
 }

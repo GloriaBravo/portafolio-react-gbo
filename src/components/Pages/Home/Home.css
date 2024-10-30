@@ -85,4 +85,7 @@ p {
     object-fit: cover; /* Recorta la imagen para que llene el contenedor */
     margin-bottom: 15px; /* Espacio debajo de la imagen */
 }
-
+.ContainerSections .contact-me{
+    width: 100%;
+    background-color: red;
+}

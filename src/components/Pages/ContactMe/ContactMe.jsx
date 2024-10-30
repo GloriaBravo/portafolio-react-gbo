@@ -1,5 +1,5 @@
 
-import './ContactMe.css'; // Asegúrate de tener un archivo CSS para estilos
+import './ContactMe.css'; 
 
 export const ContactMe = () => {
   return (
