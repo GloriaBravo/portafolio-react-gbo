@@ -1,9 +1,11 @@
 
 import './ContactMe.css'; 
+import logo from "../../../assets/images/GLOIRY.jpg";
 
 export const ContactMe = () => {
   return (
     <div className="contact-me">
+      <img src={logo} alt="Logo" className="navbar-logo" />
       <h2>Contáctame</h2>
       <form>
         <div>

@@ -27,6 +27,14 @@ export const Home = () => {
           </section>
         </ContainerSections>
 
+
+        <ContainerSections>
+          <section aria-labelledby="projects">
+            <h2 id="projects">Proyectos</h2>
+            <Projects />
+          </section>
+        </ContainerSections>
+
         <ContainerSections>
           <section aria-labelledby="business-card">
             <h2 id="business-card">Tarjeta de Presentación</h2>
@@ -39,14 +47,7 @@ export const Home = () => {
             />
           </section>
         </ContainerSections>
-
-        <ContainerSections>
-          <section aria-labelledby="projects">
-            <h2 id="projects">Proyectos</h2>
-            <Projects />
-          </section>
-        </ContainerSections>
-
+        
         <ContainerSections>
           <section aria-labelledby="contact-me">
             <ContactMe /> {/* Agrega el nuevo componente aquí */}

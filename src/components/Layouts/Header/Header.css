@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: rgb(31, 31, 32);
 }
 
@@ -27,7 +27,7 @@ ul > li {
 
 li > a {
   font-size: 1.5rem;
-  color: rgb(242, 242, 242);
+  color: rgb(243, 235, 235);
   text-decoration: none;
 
 }
@@ -35,6 +35,6 @@ li > a {
 li > a:hover {
   text-decoration: underline;
   font-weight: 600;
-  text-shadow: 0 0 5px rgb(170, 127, 211);
+  text-shadow: 0 0 5px rgb(53, 56, 3);
 }
 
