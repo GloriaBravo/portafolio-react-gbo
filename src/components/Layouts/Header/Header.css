@@ -5,6 +5,12 @@ header {
   align-items: center;
   gap: 2rem;
   background-color: rgb(31, 31, 32);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+  background-color: rgb(42, 42, 43);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header > nav {
@@ -18,23 +24,55 @@ header > nav {
 nav > ul {
   display: flex;
   gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 ul > li {
   list-style: none;
+  position: relative;
 }
 
 li > a {
   font-size: 1.5rem;
   color: rgb(243, 235, 235);
   text-decoration: none;
-
+  padding: 0.5rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 li > a:hover {
   text-decoration: underline;
   font-weight: 600;
   text-shadow: 0 0 5px rgb(53, 56, 3);
+  color: rgb(207, 168, 55);
+  transform: translateY(-3px);
+}
+
+li:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li > a.active {
+  color: rgb(207, 168, 55);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
