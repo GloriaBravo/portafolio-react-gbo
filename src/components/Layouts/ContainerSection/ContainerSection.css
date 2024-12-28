@@ -1,0 +1,31 @@
+/* Estilo para el contenedor de la sección */
+.container-section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .container-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Estilo para el título de la sección */
+  .container-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para los elementos hijos (si deseas agregar algún estilo específico) */
+  .container-section > * {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  

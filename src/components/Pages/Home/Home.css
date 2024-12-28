@@ -1,148 +1,219 @@
-/* Estilo general para Home */
+/* Estilos generales para la página de inicio */
 main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    color: #00bcd4;
+  }
+  
+  /* Contenedor principal */
+  .container-section {
+    margin-bottom: 30px;
+  }
+  
+  .container-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Estilo para la tarjeta de presentación (BusinessCard) */
+  .business-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9;
     padding: 20px;
-    background-color: #d7f3f3;
-}
-
-/* Estilo para ContainerSections */
-.ContainerSections {
-    width: 90%;
-    max-width: 800px;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: hsl(190, 59%, 56%);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px #2964ac1a;
-    transition: background-color 0.3s ease;
-    animation: fadeIn 1s ease-out;
-}
-
-.ContainerSections:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: hsl(190, 59%, 65%);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Encabezados */
-h2 {
-    font-size: 1.8rem;
-    color: #1f1d1d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
-    animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* Párrafos */
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #605c5c;
-    text-align: justify;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Estilo para la imagen de perfil en IntroProfile */
-.ContainerSections .container-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-}
-
-.ContainerSections .container-img img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilo para la tarjeta de presentación */
-.business-card {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 20px 0;
-}
-
-.business-card h3 {
-    font-weight: bold;
-    color: #1f1d1d;
-    margin: 10px 0;
-}
-
-.business-card p.title {
-    font-weight: bold;
-    color: #2964ac;
-    margin: 5px 0;
-}
-
-.business-card p.contact {
-    font-weight: normal;
-    color: #605c5c;
-    margin: 5px 0;
-}
-
-.business-card img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .business-card img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    transition: all 0.3s ease;
-}
-
-.business-card img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Efecto en los botones */
-button {
-    background-color: #2964ac;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #1e4e73;
-    transform: scale(1.1);
-}
-
-/* Efecto de enfoque en los campos de entrada */
-input:focus, textarea:focus {
-    outline: none;
-    border: 2px solid #2964ac;
-    box-shadow: 0 0 5px rgba(41, 100, 172, 0.5);
-    transition: all 0.3s ease;
-}
-
-.ContainerSections .contact-me {
+  }
+  
+  .business-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .business-card .title {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .business-card .contact {
+    font-size: 1rem;
+    color: #555;
+    margin: 3px 0;
+  }
+  
+  /* Estilo para la sección de proyectos (Projects) */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-card {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-image {
     width: 100%;
-    background-color: red;
-}
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .project-link {
+    font-size: 1.1rem;
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para la sección de contacto (ContactMe) */
+  .contact-me {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .contact-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    resize: vertical;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button.submit-btn {
+    padding: 12px 20px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 80%;
+    }
+  
+    .contact-me {
+      padding: 15px;
+    }
+  
+    .business-card {
+      width: 80%;
+    }
+  
+    .contact-me h2 {
+      font-size: 1.8rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  

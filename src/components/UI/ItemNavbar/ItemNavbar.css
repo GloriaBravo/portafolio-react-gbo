@@ -1,0 +1,29 @@
+/* Estilo para cada item de la barra de navegación */
+.navbar-item {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #00bcd4;  /* Resalta el color cuando pasa el mouse */
+  }
+  
+  .navbar-link:focus {
+    outline: 2px solid #00bcd4;  /* Añadir un borde cuando el enlace está en foco */
+  }
+  
+  /* Estilo para cuando el enlace está activo */
+  .navbar-link.active {
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  

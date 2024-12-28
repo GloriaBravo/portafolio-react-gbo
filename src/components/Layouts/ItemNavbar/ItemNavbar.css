@@ -1,0 +1,35 @@
+/* Estilo para cada item de la barra de navegación */
+.navbar-item {
+    margin-right: 20px; 
+    list-style: none;   
+  }
+  
+ 
+  .navbar-link {
+    color: white;           
+    text-decoration: none;  
+    font-size: 1.1rem;      
+    font-weight: normal;    
+    transition: color 0.3s ease, font-weight 0.3s ease;  
+  }
+  
+
+  .navbar-link:hover {
+    color: #ff9800;           
+    font-weight: bold;        
+  }
+  
+  
+  .navbar-link.active {
+    color: #00bcd4;           
+ 
+  @media (max-width: 768px) {
+    .navbar-item {
+      margin: 10px 0; 
+    }
+  
+    .navbar-link {
+      font-size: 1rem; 
+    }
+  }
+  

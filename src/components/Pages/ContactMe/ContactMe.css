@@ -1,114 +1,84 @@
-/* ContactMe.css */
-
 .contact-me {
   max-width: 600px;
-  margin: 100px auto;
-  padding: 100px;
-  background-color: #87c0f8;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgb(234, 122, 238);
-  font-family: Arial, sans-serif;
-  opacity: 0;
-  animation: fadeInUp 1s ease-out forwards;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.contact-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .contact-me h2 {
-  text-align: center;
-  color: #0a0a0a;
+  font-size: 2rem;
   margin-bottom: 20px;
-  animation: fadeIn 1s ease-out forwards;
+  color: #333;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.contact-me form div {
-  margin-bottom: 15px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.contact-me label {
-  display: block;
+label {
+  font-size: 1.1rem;
   margin-bottom: 5px;
-  color: #050505;
-  font-weight: bold;
+  color: #555;
 }
 
-.contact-me input[type="text"],
-.contact-me input[type="email"],
-.contact-me textarea {
+input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 16px;
-  color: #ede1e1;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-me input[type="text"]:focus,
-.contact-me input[type="email"]:focus,
-.contact-me textarea:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 8px rgba(0, 86, 179, 0.4);
-  outline: none;
-}
-
-.contact-me textarea {
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
   resize: vertical;
-  min-height: 100px;
 }
 
-.contact-me button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
+textarea {
+  height: 150px;
+}
+
+button.submit-btn {
+  padding: 12px 20px;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.1rem;
   font-weight: bold;
-  color: #fff;
-  background-color: hsl(23, 100%, 50%);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.contact-me button[type="submit"]:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+button.submit-btn:hover {
+  background-color: #0097a7;
 }
 
-.contact-me button[type="submit"]:active {
-  transform: scale(1);
-}
-
-/* Responsive adjustments */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contact-me {
     padding: 15px;
   }
 
   .contact-me h2 {
-    font-size: 24px;
+    font-size: 1.8rem;
   }
 
-  .contact-me button[type="submit"] {
-    font-size: 16px;
+  .submit-btn {
+    font-size: 1rem;
   }
 }

@@ -1,0 +1,22 @@
+.img-component {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .img-component-bordered {
+    border: 2px solid #ccc;
+    padding: 5px;
+    background-color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .img-component {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+  
